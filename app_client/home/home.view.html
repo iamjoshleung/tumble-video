@@ -1,0 +1,43 @@
+<header class="mdl-layout__header">
+
+  <div class="mdl-layout__header-row">
+    <!-- Title -->
+    <span class="mdl-layout-title"><a href="/">Tumblr Video</a></span>
+    <div class="mdl-layout-spacer"></div>
+
+    <!-- Navigation -->
+    <nav class="mdl-navigation">
+      <ng-translate-language-select></ng-translate-language-select>
+      <!-- Colored mini FAB button -->
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" ng-click="vm.popupCreate()">
+        <i class="material-icons">add</i>
+      </button>
+    </nav>
+  </div>
+</header>
+
+
+
+<main class="mdl-layout__content">
+  <div class="centeredWithinWrapper" masonry preserve-order masonry-options="{ percentPosition: true, transitionDuration: '0.2s' }" column-width=".mdl-card__video" item-selector=".mdl-card__video">
+
+    <div class="mdl-card mdl-shadow--2dp mdl-card__video masonry-brick" ng-repeat="video in vm.videos" ng-click="vm.popupVideo(video)">
+      <div class="mdl-card__media">
+        <img ng-src="{{ video.poster }}" width="100%" height="100%" alt="">
+      </div>
+      <div ng-if="video.description" class="mdl-card__supporting-text">
+        {{ video.description }}
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <i class="material-icons md-72 md-white">play_circle_filled</i>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container__loadMoreBtn">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" ng-click="vm.loadMore()" ng-disabled="!vm.hasMoreVideo">
+      {{ "views.home.LoadMore" | translate }}
+    </button>
+  </div>
+</main>

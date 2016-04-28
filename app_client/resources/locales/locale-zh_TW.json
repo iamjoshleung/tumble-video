@@ -1,0 +1,15 @@
+{
+  "directives.language-select.Language": "選擇語言",
+  "views.video-modal.Download": "下載",
+  "views.video-modal.Visit": "原地址",
+  "views.video-modal.Copy": "復制",
+  "views.video-modal.Close": "關閉",
+  "views.home.LoadMore": "加載更多",
+  "views.video-creation.Title": "發佈新視頻",
+  "views.video-creation.Close": "@:views.video-modal.Close",
+  "views.video-creation.AboutVideo": "視頻簡介",
+  "views.video-creation.SubmitVideo": "提交",
+  "views.video-creation.ErrorMsg": "你確定你提交的是Tumblr視頻地址? 而且這視頻并非源自Vine或者Youtube?",
+  "views.video-creation.PostError": "必須是Tumblr視頻地址, 而且需為Tumblr視頻，非Vine或Youtube",
+  "views.video-creation.DescriptionError": "追求精而簡行嗎？"
+}

@@ -1,0 +1,15 @@
+{
+  "directives.language-select.Language": "Select Language",
+  "views.video-modal.Download": "Download",
+  "views.video-modal.Visit": "Visit",
+  "views.video-modal.Copy": "Copy",
+  "views.video-modal.Close": "Close",
+  "views.home.LoadMore": "Load more videos",
+  "views.video-creation.Title": "Submit a video post",
+  "views.video-creation.Close": "@:views.video-modal.Close",
+  "views.video-creation.AboutVideo": "What is the video about?",
+  "views.video-creation.SubmitVideo": "Submit",
+  "views.video-creation.ErrorMsg": "Are you sure this is a tumblr video post? And it is not a Vine or Youtube video?",
+  "views.video-creation.PostError": "This has to be a tumblr post url",
+  "views.video-creation.DescriptionError": "Write a short description only"
+}

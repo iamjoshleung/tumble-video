@@ -1,0 +1,43 @@
+<!-- <tumblr-nav></tumblr-nav> -->
+<header class="mdl-layout__header">
+
+  <div class="mdl-layout__header-row">
+    <!-- Title -->
+    <span class="mdl-layout-title"><a href="/">Tumblr Video</a></span>
+    <div class="mdl-layout-spacer"></div>
+
+    <!-- Navigation -->
+    <nav class="mdl-navigation">
+      <ng-translate-language-select></ng-translate-language-select>
+      <!-- Colored mini FAB button -->
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored" ng-click="vm.popupCreate()">
+        <i class="material-icons">add</i>
+      </button>
+    </nav>
+  </div>
+</header>
+
+
+<main class="mdl-layout__content">
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--6-col mdl-cell--3-offset mdl-cell--6-col-tablet mdl-cell--1-offset-tablet mdl-cell--4-col-phone">
+      <div class="mdl-card mdl-shadow--3dp mdl-card--fullwidth">
+        <div class="mdl-card__media">
+          <video-player video-data="vm.config" class="popupVideoContainer"></video-player>
+        </div>
+        <div ng-if="vm.videoData && vm.videoData.description" class="mdl-card__supporting-text">
+          {{ vm.videoData.description }}
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a ng-href="{{ vm.videoData.downloadShorten }}" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            {{ "views.video-modal.Download" | translate }}
+          </a>
+          <a ng-href="{{ vm.videoData.originShorten }}" target="_blank" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            {{ "views.video-modal.Visit" | translate }}
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>

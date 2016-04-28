@@ -1,0 +1,160 @@
+.mdl-layout-title a {
+  color: white;
+}
+
+.mdl-layout-title a:hover,
+.mdl-layout-title a:active,
+.mdl-layout-title a:focus
+{
+  color: white;
+  text-decoration: none;
+}
+
+.mdl-card__supporting-text {
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+#postLinkForm .mdl-progress {
+  max-width: 100%;
+}
+
+.centeredWithinWrapper {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.container__loadMoreBtn {
+  margin: 2em 0;
+  text-align: center;
+}
+
+#descriptionField {
+  position: relative;
+}
+
+.ng-invalid__textarea {
+
+}
+
+.mdl-textareafield__error {
+  color: #d50000;
+  position: absolute;
+  font-size: 12px;
+  margin-top: 3px;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+
+.mdl-card__video {
+  position: relative;
+  width: 236px;
+  margin: 14px 7px 0 7px;
+  cursor: pointer;
+}
+
+.mdl-card__video > .mdl-card__actions  {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-60 { font-size: 60px; }
+.material-icons.md-72 { font-size: 72px; }
+.material-icons.md-84 { font-size: 84px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-white { color: rgba(255, 255, 255, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+tumblr-nav {
+  display: block;
+  min-height: 64px;
+}
+
+#postLinkForm .mdl-textfield__label:after {
+  bottom: 16px;
+}
+
+#postLinkForm .mdl-textfield {
+  width: 100%;
+}
+
+#postLinkForm .popupVideoContainer,
+#popupVideoWindow .popupVideoContainer
+{
+  height: 500px;
+  width: 100%;
+  display: block;
+}
+
+
+
+#postLinkForm videogular,
+#popupVideoWindow videogular
+{
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 520px;
+}
+
+.video--description {
+  margin: 20px 0 5px 0;
+}
+
+.previewImg {
+  width: 100%;
+  height: auto;
+}
+
+.mdl-card--fullwidth {
+  width: 100%;
+}
+
+.copyToClipboard {
+  display: inline-block;
+  position: relative;
+}
+
+.copyToClipboard > input {
+  width: 250px;
+  height: 34px;
+  margin-right: 50px;
+}
+
+.copyToClipboard > button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.language-select {
+  margin-right: 25px;
+}
+
+
+@media (min-width: 1000px) and (max-width: 1249px) {
+    .centeredWithinWrapper {
+        width: 1000px
+    }
+}
+
+@media (min-width: 0) and (max-width: 999px) {
+    .centeredWithinWrapper {
+        width: 750px
+    }
+}

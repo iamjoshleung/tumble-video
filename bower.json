@@ -1,0 +1,28 @@
+{
+  "name": "TumblrVideo",
+  "description": "",
+  "main": "",
+  "authors": [
+    "JoshuaJazLeung-K"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-masonry": "^0.16.0",
+    "ngclipboard": "^1.1.1",
+    "angular-translate": "^2.11.0",
+    "angular-translate-loader-static-files": "^2.11.0",
+    "angular-translate-storage-local": "^2.11.0",
+    "angular-translate-handler-log": "^2.11.0",
+    "angular-dynamic-locale": "^0.1.32",
+    "angular-i18n": "^1.5.5",
+    "angular-cookies": "^1.5.5"
+  }
+}

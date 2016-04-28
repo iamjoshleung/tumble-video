@@ -1,0 +1,33 @@
+<div class="modal-content">
+  <div class="modal-header" ng-hide="postLinkForm.link.$valid">
+    <button type="button" class="close" aria-label="Close" ng-click="vm.modal.cancel()"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title" id="myModalLabel">{{ "views.video-creation.Title" | translate }}</h4>
+  </div>
+  <div class="modal-body">
+    <form action="#" name="postLinkForm" id="postLinkForm" ng-submit="$event.preventDefault()" novalidate>
+      <div class="mdl-textfield mdl-js-textfield" ng-hide="postLinkForm.link.$valid">
+        <input ng-model="vm.tumblrLink" class="mdl-textfield__input" name="link" ng-change="vm.isValid(postLinkForm.$valid)" type="url" ng-pattern="vm.pattern" required>
+        <label class="mdl-textfield__label" for="sample2">Tumblr Link e.x http://example.tumblr.com/post/142553237362/</label>
+        <span class="mdl-textfield__error" ng-show="postLinkForm.link.$dirty && postLinkForm.link.$invalid">{{ "views.video-creation.PostError" | translate }}<</span>
+      </div>
+
+      <div ng-if="vm.sending" id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+
+      <div ng-if="vm.message">{{ "views.video-creation.ErrorMsg" | translate }}</div>
+
+      <div class="popupVideoContainer" ng-if="postLinkForm.link.$valid && vm.videoData">
+        <video-player video-data="vm.config"></video-player>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield" id="descriptionField" ng-show="postLinkForm.link.$valid && vm.videoData">
+        <textarea ng-model="vm.tumblrLinkDescription" ng-class="{ 'ng-invalid__textarea' : postLinkForm.description.$invalid }" class="mdl-textfield__input" id="description" name="description" type="text" rows= "3" maxlength="255" ng-maxlength="255"></textarea>
+        <label class="mdl-textfield__label" for="description">{{ "views.video-creation.AboutVideo" | translate }}</label>
+        <span class="mdl-textareafield__error"  ng-show="postLinkForm.description.$invalid">{{ "views.video-creation.DescriptionError" | translate }}<</span>
+      </div>
+
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" ng-click="vm.updateVideo(vm.videoData._id)" ng-if="postLinkForm.$valid && vm.videoData" ng-disabled="postLinkForm.$invalid">{{ "views.video-creation.SubmitVideo" | translate }}</button>
+    <button type="button" class="btn btn-default" ng-click="vm.modal.cancel()">{{ "views.video-creation.Close" | translate }}</button>
+  </div>
+</div>
